@@ -7,7 +7,7 @@ public class MySocialBook {
 
     public static void main(String[] args) throws IOException {
 
-        File f = new File("C:\\Users\\BILGI\\IdeaProjects\\deneme\\Assignment\\src\\users.txt");
+        File f = new File(args[0]);
         FileReader fr = new FileReader(f);
         BufferedReader br = new BufferedReader(fr);
         String line = br.readLine();
@@ -25,7 +25,7 @@ public class MySocialBook {
         }
 
         //command machine
-        File f2 = new File("C:\\Users\\BILGI\\IdeaProjects\\deneme\\Assignment\\src\\commands.txt");
+        File f2 = new File(args[1]);
         FileReader fr2 = new FileReader(f2);
         BufferedReader br2 = new BufferedReader(fr2);
         String line2 = br2.readLine();
